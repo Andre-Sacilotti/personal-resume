@@ -4,6 +4,7 @@ import { FiMenu } from 'react-icons/fi';
 import { IconContext } from 'react-icons';
 
 import Navitem from './Navitem';
+import Sidebar from '../Sidebar/Sidebar';
 
 const NavbarDivUpper = styled.div`
     max-width: 100vw;
@@ -53,6 +54,7 @@ const Navbar = () => {
             <IconContext.Provider value={{ size: 32, color: '#FFFFFF' }}>
               <FiMenu onClick={handlerNavbar}/>
             </IconContext.Provider>
+            <Sidebar show={showNavbar} />
           </MenuIconDiv>
         </MobileNavbarDiv>
 
